@@ -4,30 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>TP Grupo 104</title>
 </head>
 <body>
   <div class="logo">
     <header>
       <img src="img/logo-epe-empresa.png" height="150" width="300">
+      <h1>Calculadora de Costo de Energía eléctrica</h1>
     </header>
   </div>
+  <div class="img-div">
+  <div class="calculadora">
     <form action="Calculadora energia electrica" method="get">
         <ul>
             <li>
               <label for="usuario">Tipo de Usuario:</label>
               <div>
-                <input type="radio" id="residencial" name="residen" value="residencial"
-                       checked>
+                <input type="radio" id="residencial" name="residen" value="residencial" checked required>
                 <label for="residencial">Residencial</label>
+             
               </div>
               
               <div>
-                <input type="radio" id="industrial" name="industrial" value="industrial">
+                <input type="radio" id="industrial" name="industrial" value="industrial" required>
                 <label for="industrial">industrial</label>
               </div>
-            </li>          
+            </li>
+              <div>
+              <li>
+                <label for="number">Cantidad de kWh del mes:</label>
+                <input type="number" id="number" required>
+              </li>
+              </div>
+        <div>
+          <li>
+        <label for="distritos">Elija su distrito</label>
+        </li> 
+        <select name="distritos">
+          <option value="dist-centro">Distrito Centro</option>
+          <option value="dist-sur">Distrito Sur</option>   
+          <option value="dist-oeste">Distrito Oeste</option>   
+          <option value="dist-norte">Distrito Norte</option>
+        </select>
+      </div>
     </form>
+  </div>
+</div>
 </body>
 </html>

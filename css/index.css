@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+* {
+    font-family: Poppins;
+}
+
 header{
     background-color: grey;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    padding-left: 300px;
+    font-size: 50px;
+}
+
+.img-div {
+
+    background-image: url("https://s1.best-wallpaper.net/wallpaper/m/1706/Electricity-cables-high-voltage-transmission-lines_m.webp");
+}
+
+.calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    border: 1px solid black;
+    width: 600px;
+    height: 500px;
+    font-size: 27px;
+}
+
+form li {
+    list-style-type: none;
 }
