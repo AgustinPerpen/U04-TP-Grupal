@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+<<<<<<< HEAD
 
 *,
 *::before,
@@ -8,28 +9,50 @@
     padding: 0;
 }
 
+=======
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+>>>>>>> 06615ff47907eb07238acaebb88a1e03f989f818
 * {
     font-family: Poppins;
 }
 
+<<<<<<< HEAD
 header {
+=======
+header{
+>>>>>>> 06615ff47907eb07238acaebb88a1e03f989f818
     background-color: grey;
     display: flex;
     align-items: center;
 }
 
 header h1 {
+<<<<<<< HEAD
     padding-left: 100px;
     font-size: 40px;
     text-align: center;
+=======
+    padding-left: 300px;
+    font-size: 50px;
+>>>>>>> 06615ff47907eb07238acaebb88a1e03f989f818
 }
 
 .img-div {
 
+<<<<<<< HEAD
     background-image: url("../img/Cableado-fondo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+=======
+    background-image: url("https://s1.best-wallpaper.net/wallpaper/m/1706/Electricity-cables-high-voltage-transmission-lines_m.webp");
+>>>>>>> 06615ff47907eb07238acaebb88a1e03f989f818
 }
 
 .calculadora {
@@ -41,6 +64,7 @@ header h1 {
 
 form {
     border: 1px solid black;
+<<<<<<< HEAD
     width: 800px;
     height: 700px;
     font-size: 27px;
@@ -71,3 +95,13 @@ button {
     -webkit-border-radius: 10px;
     margin: 10px
 }
+=======
+    width: 600px;
+    height: 500px;
+    font-size: 27px;
+}
+
+form li {
+    list-style-type: none;
+}
+>>>>>>> 06615ff47907eb07238acaebb88a1e03f989f818
