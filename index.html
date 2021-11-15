@@ -2,20 +2,17 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/index.js" defer></script>
   <title>TP Grupo 104</title>
-=======
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <title>TP Grupo 104</title>
->>>>>>> 06615ff47907eb07238acaebb88a1e03f989f818
 </head>
 
 <body>
@@ -26,13 +23,12 @@
     </header>
   </div>
   <div class="img-div">
-<<<<<<< HEAD
     <div class="calculadora">
       <form name="frmCalc" method="post" id="frmCalc">
         <label for="usuario">Tipo de Usuario:</label>
-        <div class="item-form">
-          <input type="radio" name="usuarios" id ="residecial" value="residecial" checked> Residencial
-          <input type="radio" name="usuarios" id = "industrial" value="industrial"> Industrial
+        <div class="item-form" id="item-form">
+          <input type="radio" name="usuarios" id ="usuarios-residencial" value="residencial" required> Residencial
+          <input type="radio" name="usuarios" id ="usuarios-industrial" value="industrial"> Industrial
         </div>
         <div class="cant_kwh">
           <label for="cant_mes">Cantidad de kWh del mes:</label>
@@ -43,56 +39,22 @@
           </li>
           <select name="distritos" id="distritos">
             <option selected>Elegir...</option>
-            <option name="distrito-centro">Distrito Centro</option>
-            <option name="distrito-sur">Distrito Sur</option>
-            <option name="distrito-oeste">Distrito Oeste</option>
-            <option name="distrito-norte">Distrito Norte</option>
+            <option id="distrito-centro" name="distrito-centro" value="distrito-centro">Distrito Centro</option>
+            <option id="distrito-sur" name="distrito-sur" value="distrito-sur">Distrito Sur</option>
+            <option id="distrito-oeste" name="distrito-oeste" value="distrito-oeste">Distrito Oeste</option>
+            <option id="distrito-norte" name="distrito-norte" value="distrito-norte">Distrito Norte</option>
           </select>
         </div>    
         <br>
-        <button type="button" name="calcular" id="calcular" onclick=calcular()> CALCULAR</button>
-        <input type="text" name="txtResult" id="result" size="30">
+        <div class="display">
+          <button type="button" name="calcular" id="calcular" onclick="validarCantidadKwh(); validarDistritos(); calcularKwh()"> CALCULAR</button>
+          <p type="text" name="txtResult" id="result" size="30">
+        </div>
+        
       </form>
     </div>
-  </div>
-=======
-  <div class="calculadora">
-    <form action="Calculadora energia electrica" method="get">
-        <ul>
-            <li>
-              <label for="usuario">Tipo de Usuario:</label>
-              <div>
-                <input type="radio" id="residencial" name="residen" value="residencial" checked required>
-                <label for="residencial">Residencial</label>
-             
-              </div>
-              
-              <div>
-                <input type="radio" id="industrial" name="industrial" value="industrial" required>
-                <label for="industrial">industrial</label>
-              </div>
-            </li>
-              <div>
-              <li>
-                <label for="number">Cantidad de kWh del mes:</label>
-                <input type="number" id="number" required>
-              </li>
-              </div>
-        <div>
-          <li>
-        <label for="distritos">Elija su distrito</label>
-        </li> 
-        <select name="distritos">
-          <option value="dist-centro">Distrito Centro</option>
-          <option value="dist-sur">Distrito Sur</option>   
-          <option value="dist-oeste">Distrito Oeste</option>   
-          <option value="dist-norte">Distrito Norte</option>
-        </select>
-      </div>
-    </form>
-  </div>
+  </div>  
 </div>
->>>>>>> 06615ff47907eb07238acaebb88a1e03f989f818
 </body>
 
 </html>
