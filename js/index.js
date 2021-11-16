@@ -14,9 +14,17 @@ function validarDistritos(){
       }
 }
 
+function validarCheckbox(){
+      if (document.getElementById('usuarios-prueba').checked){
+            alert("Debe escoger un Tipo de Usuario");
+      return false;
+      }
+}
+
+
 /* function validarCheckbox(){
 
-      if (document.querySelector('input[name="usuarios"]:checked').value == undefined){
+      if (document.querySelector('input[name="usuarios"]:checked') is null){
             alert("Debe escoger un Tipo de Usuario");
             return false;
       }
@@ -59,4 +67,3 @@ function calcularKwh(){
       resu.innerText = `$${resultadoDecimal}`;
      
 }
-
