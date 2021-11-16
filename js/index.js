@@ -55,7 +55,8 @@ function calcularKwh(){
        }       
 
       resultado = 102 + (cantidad * zonasFinal) * (1 + ivaFinal);
-      resu.innerText = `$${resultado}`;
+      resultadoDecimal = resultado.toFixed(2);
+      resu.innerText = `$${resultadoDecimal}`;
      
 }
 

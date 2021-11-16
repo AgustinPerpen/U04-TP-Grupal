@@ -20,6 +20,7 @@
     <header>
       <img src="img/logo-epe-empresa.png" height="150" width="300">
       <h1>Calculadora de Costo de Energía eléctrica</h1>
+      <img src="img/logo-epe-empresa.png" height="150" width="300">
     </header>
   </div>
   <div class="img-div">
@@ -36,25 +37,31 @@
         </div>
         <div class="distritos">
           <label for="distrito">Elija su distrito</label>
-          </li>
-          <select name="distritos" id="distritos">
-            <option selected>Elegir...</option>
-            <option id="distrito-centro" name="distrito-centro" value="distrito-centro">Distrito Centro</option>
-            <option id="distrito-sur" name="distrito-sur" value="distrito-sur">Distrito Sur</option>
-            <option id="distrito-oeste" name="distrito-oeste" value="distrito-oeste">Distrito Oeste</option>
-            <option id="distrito-norte" name="distrito-norte" value="distrito-norte">Distrito Norte</option>
-          </select>
-        </div>    
-        <br>
-        <div class="display">
-          <button type="button" name="calcular" id="calcular" onclick="validarCantidadKwh(); validarDistritos(); calcularKwh()"> CALCULAR</button>
-          <p type="text" name="txtResult" id="result" size="30">
+        </li>
+        <select name="distritos" id="distritos">
+          <option selected>Elegir...</option>
+          <option id="distrito-centro" name="distrito-centro" value="distrito-centro">Distrito Centro</option>
+          <option id="distrito-sur" name="distrito-sur" value="distrito-sur">Distrito Sur</option>
+          <option id="distrito-oeste" name="distrito-oeste" value="distrito-oeste">Distrito Oeste</option>
+          <option id="distrito-norte" name="distrito-norte" value="distrito-norte">Distrito Norte</option>
+        </select>
+      </div>    
+      <div class="display">
+        <button type="button" name="calcular" id="calcular" onclick="validarCantidadKwh(); validarDistritos(); calcularKwh()"> CALCULAR</button>
+        <p type="text" name="txtResult" id="result" size="30">
         </div>
-        
-      </form>
+      <br>    
+    </form>
+    <div class="container-explicacion">
+      <h3>Información de la calculadora</h3>
+    <p class="explicacion-calculadora">
+    </p>
     </div>
-  </div>  
-</div>
+    </div>
+
+  </div>
+  </div>
+</div>  
 </body>
 
 </html>

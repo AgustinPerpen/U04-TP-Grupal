@@ -23,14 +23,15 @@
 header{
     background-color: grey;
     display: flex;
-    align-items: center;    
+    align-items: center;   
+    justify-content: space-between; 
 }
 
 header h1 {
     padding-left: 100px;
     font-size: 40px;
     text-align: center;
-    padding-left: 300px;
+    justify-content: center;
     font-size: 50px;
 }
 
@@ -39,6 +40,7 @@ header h1 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    height: 90vh;
 }
 
 .calculadora {
@@ -51,14 +53,14 @@ header h1 {
 form {
     border: 1px solid black;
     width: 800px;
-    height: 700px;
+    height: 500px;
     font-size: 27px;
+    background: rgba(14, 14, 14, 0.5);
 }
 
 
 form label  {
-    color: #2874a6;
-    text-decoration: underline;
+    color: white;
     font-weight: bold;
     padding: 10px;
     margin: 10px;
@@ -66,10 +68,13 @@ form label  {
 }
 
 .item-form{
+   color: white;
    padding: 10px;
    margin: 10px;
    word-spacing: 0.20em;
+   padding-left: 230px;
 }
+
 
 button {
     background-color: #000000;
@@ -81,6 +86,25 @@ button {
     margin: 10px
 }
     
+#cantidad {
+    width: 30%;
+    height: 10%;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cant_kwh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 form li {
@@ -93,5 +117,42 @@ form li {
 
 .display{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#result {
+    background-color: white;
+}
+
+.distritos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#distritos {
+    width: 40%;
+    height: 50%;
+    font-size: 20px;
+}
+
+.container-explicacion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(14, 14, 14, 0.5);
+    border: 1px solid black;
+    width: 42%;
+}
+
+.container-explicacion h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.explicacion-calculadora {
+    display: flex;
+    justify-content: center;
 }
