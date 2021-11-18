@@ -41,6 +41,7 @@ function calcularKwh(){
       let ivaFinal;
       let zonasFinal;
       let resu = document.getElementById("result");
+      let flag = 0;
 
       if (iva == "residencial"){
             ivaFinal = 0.21;
@@ -51,19 +52,26 @@ function calcularKwh(){
       
       if (zonas == zonaCentro){
             zonasFinal = 5.80;
+            flag = 1;
        } 
       if (zonas == zonaSur){
             zonasFinal = 5.40;
+            flag = 1;
        } 
       if (zonas == zonaOeste){  
             zonasFinal = 5.35;
+            flag = 1;
        } 
       if (zonas == zonaNorte){
             zonasFinal = 5.60;
-       }       
+            flag = 1;
+       }  
 
       resultado = 102 + (cantidad * zonasFinal) * (1 + ivaFinal);
       resultadoDecimal = resultado.toFixed(2);
-      resu.innerText = `$${resultadoDecimal}`;
+
+      if (flag == 1){
+            resu.innerText = `$${resultadoDecimal}`;
+      }
      
 }
