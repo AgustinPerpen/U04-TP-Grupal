@@ -102,6 +102,8 @@ button:hover {
   align-items: center;
   font-size: 20px;
   text-align: center;
+  background: linear-gradient(to bottom, #152f5c 5%, #415989 100%);
+  color: white;
 }
 
 .cant_kwh {
@@ -148,6 +150,8 @@ form li {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 0px;
+  
 }
 
 #distritos {
@@ -155,6 +159,14 @@ form li {
   height: 50%;
   font-size: 17px;
 }
+
+select{
+  background: #152f5c;
+  color: white;
+}
+
+
+
 
 .container-explicacion {
   display: flex;
