@@ -123,9 +123,6 @@ form li {
   list-style-type: none;
 }
 
-#result {
-  border: 2px solid black;
-}
 
 .display {
   display: flex;
