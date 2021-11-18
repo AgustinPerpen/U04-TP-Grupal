@@ -8,7 +8,7 @@
   padding: 0;
 }
 * {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 header {
@@ -34,7 +34,7 @@ header h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  height: 71vh;
+  height: 79vh;
 }
 
 .calculadora {
@@ -73,12 +73,12 @@ form label {
   font-size: 20px;
 }
 
-#usuarios-residencial:hover{
-    cursor:pointer;
+#usuarios-residencial:hover {
+  cursor: pointer;
 }
 
-#usuarios-industrial:hover{
-    cursor:pointer;
+#usuarios-industrial:hover {
+  cursor: pointer;
 }
 
 button {
@@ -93,7 +93,7 @@ button {
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #cantidad {
@@ -117,7 +117,6 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 form li {
@@ -138,35 +137,31 @@ form li {
   background: linear-gradient(to bottom, #152f5c 5%, #415989 100%);
   color: white;
   width: 150px;
-  text-align: center; 
+  text-align: center;
   align-items: center;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
 
-
 .distritos {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 0px;
-  
 }
 
 #distritos {
   width: 40%;
   height: 50%;
   font-size: 17px;
+  text-align: center;
 }
 
-select{
+select {
   background: #152f5c;
   color: white;
 }
-
-
-
 
 .container-explicacion {
   display: flex;
@@ -183,9 +178,8 @@ select{
 }
 
 .container-explicacion h3 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  
 }
 
 .title-li {
@@ -200,7 +194,7 @@ select{
 .epe-footer {
   text-align: center;
   background-color: black;
-  height: 170px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
